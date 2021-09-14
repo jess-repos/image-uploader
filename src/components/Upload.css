@@ -1,0 +1,61 @@
+.upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.upload h3 {
+  font-size: 1.5rem;
+}
+.upload > * {
+  margin: 0.5rem 0;
+}
+.upload-area {
+  width: 24rem;
+  padding: 1rem;
+  background-color: rgb(240, 240, 240);
+  border-radius: 12px;
+  text-align: center;
+  border: 2px dashed rgb(135, 169, 189);
+  transition: all ease 0.3s;
+  position: relative;
+}
+.upload-area i {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 2px;
+  right: 2px;
+  cursor: pointer;
+  color: red;
+  background-color: white;
+  border-radius: 50%;
+}
+.upload-area.drag-over {
+  border: 3px dashed rgb(92, 114, 128);
+}
+.upload-area p {
+  margin: 2rem;
+}
+.upload-placeholder {
+  margin: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.upload-preview {
+  width: 100%;
+}
+.upload input {
+  display: none;
+}
+.upload label {
+  color: white;
+  background-color: rgb(155, 155, 155);
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+.upload label:hover {
+  background-color: rgb(105, 105, 105);
+}

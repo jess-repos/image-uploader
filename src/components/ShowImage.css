@@ -1,0 +1,38 @@
+.show-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.show-image > * {
+  margin: 0.5rem 0;
+}
+.show-image h3 {
+  font-size: 1.5rem;
+}
+.show-image i {
+  color: rgb(13, 175, 49);
+  font-size: 2rem;
+}
+.show-image .back {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.show-image .back i {
+  color: white;
+}
+.show-image img {
+  width: 24rem;
+  border-radius: 12px;
+}
+.control {
+  width: 100%;
+  display: flex;
+  border: 2px solid rgb(135, 169, 189);
+  background-color: rgb(240, 240, 240);
+  border-radius: 12px;
+}
+.control input {
+  flex-grow: 1;
+}

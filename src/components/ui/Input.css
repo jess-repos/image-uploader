@@ -1,0 +1,13 @@
+.input {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+.input.full-width {
+  width: 100%;
+}

@@ -1,0 +1,27 @@
+.button {
+  color: white;
+  background-color: rgb(83, 111, 236);
+  padding: 1rem;
+  border-radius: 12px;
+  /* cursor: pointer; */
+  transition: all ease 0.3s;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: fit-content;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: rgb(65, 87, 184);
+}
+.button.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  background-color: rgb(192, 192, 192) !important;
+}
+.button.full-width {
+  width: 100%;
+}

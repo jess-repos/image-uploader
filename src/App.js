@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import ShowImage from "./components/ShowImage";
+import Toast from "./components/ui/Toast";
+import Upload from "./components/Upload";
 function App() {
+  const [fileUploaded, setFileUploaded] = useState(false);
+  const [link, setLink] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!fileUploaded ? (
+        <Upload setLink={setLink} setFileUploaded={setFileUploaded} />
+      ) : (
+        <ShowImage
+          link={link}
+          setLink={setLink}
+          setFileUploaded={setFileUploaded}
+        />
+      )}
+      <p className="footer">
+        created by <span>J E S S</span> - devChallenges.io
+      </p>
+      <Toast />
+    </>
   );
 }
 
